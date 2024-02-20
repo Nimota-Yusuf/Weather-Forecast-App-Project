@@ -2,12 +2,12 @@ body{
  box-sizing: content-box; 
  margin: 0;
  padding: 0;  
- background: #6d6a6a;
+ background: #837d7d;
  background-size: cover; 
 }
 
 .weather-container{    
-    width: 30%;
+    width: 37%;
     margin: 65px auto;
     display: block;
     background: linear-gradient(359.3deg, rgb(196, 214, 252) 1%, rgba(187, 187, 187, 0) 70.9%);
@@ -48,7 +48,7 @@ body{
 }
 
 header{
-    border-bottom: 1px rgb(145, 138, 138) solid;
+    border-bottom: 1px rgb(158, 154, 154) solid;
     padding: 0 0 20px 0;
 
 }
@@ -73,13 +73,14 @@ main{
 .weather-readings{
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: rgb(105, 102, 102);
+    color: rgb(56, 55, 55);
     line-height: 23px;
+    opacity: 0.5;
     letter-spacing: 0.3px;
 }
 
 .weather-readings strong{
-    color: #5050f3;
+    color:  #0606ce;
     font-weight: bolder;
 }
 
@@ -107,31 +108,34 @@ main{
 }
 
 .weather-forecast{
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.forecast-date{
     display: block;
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .forecast-day{
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    color: rgb(105, 102, 102);
+    color: #d4d6db;
     margin-bottom: 10px;
     line-height: 20px;
+    text-align: center;
 }
 
 .forecast-icon{
-    width: 88px;
-    height: 88px;
-    margin: 0 auto; 
-    padding: 0 10px;
+    display: block;
+    margin: 0 auto;
+    font-size: 38px;
 }
 
 .forecast-temperature{
     display: flex;
     justify-content: center;
-    margin-top: 25px;
+    margin: 15px 0px;
     text-align: center;
 }
 
@@ -139,7 +143,7 @@ main{
     color:#ca2222;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    padding:0 10px;
+    padding:0 15px;
 }
 .forecast-temperature-min{
     color:#f76464;
@@ -169,6 +173,6 @@ footer p a:hover{
 }
 
 footer{
-    border-top: 1px  rgb(202, 199, 199) solid;
+    border-top: 1px  rgb(228, 216, 216) solid;
     padding: 20px 0 0 0;
 }
